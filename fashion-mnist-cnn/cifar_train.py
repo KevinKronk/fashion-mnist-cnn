@@ -32,19 +32,3 @@ print(loss, accuracy)
 
 model.save('fashion_mnist.h5')
 print('Model Saved.')
-
-
-"""
-model = tfk.Sequential()
-model.add(tfk.layers.Conv2D(32, kernel_size=(3, 3),
-                            activation=tfk.activations.relu, input_shape=(28, 28, 1)))
-model.add(tfk.layers.Conv2D(64, kernel_size=(3, 3), activation=tfk.activations.relu))
-model.add(tfk.layers.MaxPooling2D(pool_size=(2, 2)))
-model.add(tfk.layers.Dropout(0.5))
-
-model.add(tfk.layers.Flatten())
-model.add(tfk.layers.Dense(128, activation=tfk.activations.relu))
-model.add(tfk.layers.Dropout(0.5))
-model.add(tfk.layers.Dense(10, activation=tfk.activations.softmax))
-
-"""
