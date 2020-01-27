@@ -12,8 +12,9 @@ class_names = {0: 'T-shirt/top', 1: 'Trouser', 2: 'Pullover', 3: 'Dress', 4: 'Co
                5: 'Sandal', 6: 'Shirt', 7: 'Sneaker', 8: 'Bag', 9: 'Ankle boot'}
 
 plt.figure(figsize=(10, 6))
+# Choose random images
 test = np.random.randint(0, 9999, size=(8,))
-print(test)
+
 sub = 1
 for i in test:
     image = np.expand_dims(x_test[i], axis=0)

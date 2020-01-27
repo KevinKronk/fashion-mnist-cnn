@@ -10,6 +10,8 @@ x_test = np.reshape(x_test, [10000, 28, 28, 1])
 x_train = x_train / 255.0
 x_test = x_test / 255.0
 
+
+# Create Model
 model = tfk.Sequential()
 model.add(layers.Conv2D(32, kernel_size=(3, 3), strides=(1, 1), activation=tfk.activations.relu,
                         input_shape=(28, 28, 1), padding='same'))
